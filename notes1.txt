@@ -1,0 +1,29 @@
+sorting values and the set index: in place for changing the original dataset directly 
+sort value: order ascending and descending 
+sort values can be based on more than one column
+how to sort the non numeric data -> key, lambda 
+sort index 
+sort value and sort index + the plot function 
+loc[] for indexing -> access the data by the index 
+loc[[]] -> get back a dataframe not a series 
+slices in loc: 
+    df.loc[5:10]
+    df.loc[5:10:2] 2 steps 
+
+iloc -> pure numeric location "not the actual index" 
+    df.iloc[[20]]: get the 20th country even if the index is country name 
+    iloc[] vs iloc[[]]: series vs data frame format 
+    use iloc[[]] more 
+
+loc & iloc: spesify the rows 
+    loc/iloc[xx:xx, ['row1', 'row2]]
+
+value_counts + loc -> answer real questions 
+    index of value counts is the unqiue values in the data frame like age in titanic 
+    how many are 18 for example in titanic 
+
+
+---------
+filtering
+True and false series based filtering 
+between: df["colName"].between(x,y)
