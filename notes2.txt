@@ -1,0 +1,6 @@
+matplotlib: https://matplotlib.org/stable/plot_types/index.html
+x, y variables: array like (pandas series - list - numpy array - scalar)
+single array: y, and assumes x is 1 increment by 1 
+    input [2,4,6,8]
+    x aassumed to be [1,2,3,4]
+

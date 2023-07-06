@@ -1,7 +1,7 @@
 describe 
 shape 
 type(df)
-info
+info() 
 group by 
 columns 
 head and tail
@@ -10,7 +10,7 @@ delimiter and sep - regular expression, overloading on python csv - read_csv
 index_col (column index), header (0/1) - read_csv
 names - provide column names read_csv
 isna
-mask + df[mask].index 
+mask + df[mask].index fn
 numeric_olny = true @ sum, min @ describe
 count() for missing data OR info() 
 include in describe 
@@ -20,11 +20,11 @@ df.describe(include=["O"]) to get unique column values too
 USE min() max() ...etc. directly on the data frame without describe 
 series: max, min. sum ... index values dtypes describe 
 Nlargest and Nsmallest - keep for duplicate values - series and data frame 
+    sort values also
 df[["col1", "col2", "col3"]]
 value counts + plot -> very powerful 
-kind in plot -> bar - pie ... etc .
 plot from series and data frames
-plot kind = hist
+plot kind = hist, pie, bar
 --------------
 indexing can be changed for data sets 
-set_index + inplace -> to mutate the orginial data frame
+set_index + inplace -> to mutate the orginial data frame -> change in the dataframe itself not a new object
